@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <script type="text/javaScript">
+            function largestdigit() {
+                var a=parseInt(document.getElementById("txt").value);
+                var max=0;
+                var rem=0;
+                while(a>0){
+                    rem=a%10;
+                    if(rem>max){
+                        max=rem;
+                    }
+                    a=Math.floor(a/10);
+                }
+                document.getElementById("anstxt").value=max;
+            }
+        </script>
+    </head>
+    <body>
+        <label>Enter your number:</label>
+        <input id="txt" type="text" size="30">
+        <input type="button" onclick="largestdigit()" value="largedigit">
+        <input id="anstxt" >
+    </body>
+</html>

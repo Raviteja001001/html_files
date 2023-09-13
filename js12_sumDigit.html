@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <script type="text/javaScript">
+            function sumdigit() {
+                var a=parseInt(document.getElementById("txt").value);
+                var sum=0;
+                var rem;
+                while(a>0){
+                    sum +=a%10;
+                    a=Math.floor(a/10);
+                }
+                document.getElementById("anstxt").value=sum;
+            }
+        </script>
+    </head>
+    <body>
+        <label>Enter your number:</label>
+        <input id="txt" type="text" size="30">
+        <input type="button" onclick="sumdigit()" value="sumdigit">
+        <input id="anstxt" >
+        
+    </body>
+</html>

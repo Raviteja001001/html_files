@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <script type="text/javaScript">
+            function revdigit() {
+                var a=parseInt(document.getElementById("txt").value);
+                var sd=0;
+                var rem;
+                while(a>0){
+                    sd =sd*10+a%10;
+                    a=Math.floor(a/10);
+                }
+                document.getElementById("anstxt").value=sd;
+            }
+        </script>
+    </head>
+    <body>
+        <label>Enter your number:</label>
+        <input id="txt" type="text" size="30">
+        <input type="button" onclick="revdigit()" value="sumdigit">
+        <input id="anstxt" >
+        
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <script>
+            function add(){
+                var a,b,c;
+                a=parseInt(document.getElementById("textfirstnum").value);
+                b=parseInt(document.getElementById("textsecondnum").value);
+                c=a+b;
+                document.getElementById("answer").value=c;
+            }
+            function sub(){
+                var a,b,c;
+                a=parseInt(document.getElementById("textfirstnum").value);
+                b=parseInt(document.getElementById("textsecondnum").value);
+                c=a-b;
+                document.getElementById("answer").value=c;
+            }
+        </script>
+        <style>
+
+        </style>
+    </head>
+    <body bgcolor="lightblue">
+        <p>Firstname:<input id="textfirstnum"></p>
+        <p>Secondname:<input id="textsecondnum"></p>
+        <button onclick="add()">Adding</button>
+        <button onclick="sub()">Subtraction</button>
+        <p>Value=<input id="answer"></p>
+    </body>
+</html>

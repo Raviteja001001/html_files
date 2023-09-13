@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <script type="text/javaScript">
+            function smallestdigit() {
+                var a=parseInt(document.getElementById("txt").value);
+                var min=9;
+                while(a>0){
+                    rem =a%10;
+                    if(rem<min){
+                        min=rem;
+                    }
+                    a=Math.floor(a/10);
+                }
+                document.getElementById("anstxt").value=min;
+            }
+        </script>
+    </head>
+    <body>
+        <label>Enter your number:</label>
+        <input id="txt" type="text" size="30">
+        <input type="button" onclick="smallestdigit()" value="smalldigit">
+        <input id="anstxt" >
+    </body>
+</html>
