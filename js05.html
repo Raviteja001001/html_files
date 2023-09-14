@@ -1,0 +1,13 @@
+<html>
+    <body>
+        <h2>javascript demo</h2>
+        <p >Finding html elements by tagname </p>
+        <p class="intro">Hello world.!</p>
+        <p class="intro">this example demonstrates the <b>querySelectorAll</b> method.</p>
+        <p id="demo"></p>
+        <script>
+           const element= document.querySelectorAll("p.intro");
+            document.getElementById("demo").innerHTML='the text is from intro parais(index 0)is:'+element[0].innerHTML;
+        </script>
+    </body>
+</html>

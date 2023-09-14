@@ -1,0 +1,14 @@
+<html>
+    <body>
+        <h2>javaScript addEventListener()</h2>
+        <p>this is example of addEventListener() method to window object</p>
+        <p>the resizing this browser to trigger the resize event</p>
+        <p id="demo"></p>
+
+        <script>
+          window.addEventListener("resize",function(){
+            document.getElementById("demo").innerHTML=Math.random();
+          });
+        </script>
+    </body>
+</html>

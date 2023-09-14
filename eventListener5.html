@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <h2>javaScript addEventListener()</h2>
+        <p>this is example of addEventListener() method to passing parameter</p>
+        <p>the click button to performe a calculation</p>
+        <button id="but">try..</button>
+        <p id="demo"></p>
+
+        <script>
+          p1=5;
+          p2=7;
+          document.getElementById("but").addEventListener("click",function(){
+            fun1(p1,p2);
+        }
+            );
+          function fun1(a,b){
+            document.getElementById("demo").innerHTML=a*b;
+          }
+        </script>
+    </body>
+</html>

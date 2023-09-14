@@ -1,0 +1,12 @@
+<html>
+    <body>
+        <h2>javascript demo</h2>
+        <p class="intro">Finding html elements by tagname </p>
+        <p class="intro">this example demonstrates the <b>getElementByClassName</b> method.</p>
+        <p id="demo"></p>
+        <script>
+           const element= document.getElementsByClassName("intro");
+            document.getElementById("demo").innerHTML='the text is from intro parais(index 0)is:'+element[1].innerHTML;
+        </script>
+    </body>
+</html>
